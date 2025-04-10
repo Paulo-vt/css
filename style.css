@@ -22,7 +22,7 @@ p {
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  background: url(/wallpaper.jpg) no-repeat center center fixed;
+  background: url(./wallpaper.jpg) no-repeat center center fixed;
   background-size: cover;
   padding-top: 60px;
 }
