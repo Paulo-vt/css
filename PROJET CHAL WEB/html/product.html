@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopas</title>
+    <link rel="stylesheet" href="..\css\style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!DOCTYPE html>
+    <html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopas - Product Overview</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #FFDDAD;
+        }
+    
+        .banner {
+            height: 60px;
+        }
+    
+        .product-overview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+    
+        .product-title {
+            font-size: 2rem;
+            color: #E48546;
+            margin-bottom: 10px;
+        }
+    
+        .product-description {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #E48546;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+    
+        .buy-button:hover {
+            background-color: #c4723e;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <header class="nav_bar">
+            <div class="left_links">
+                <a href="../html/login.html">Connexion</a>
+                <a href="../html/signup.html">Inscription</a>
+            </div>
+            <div class="logo_container">
+                <a href="../index.html">
+                    <img src="../logo/logo_Kopass.png" alt="Logo Kopas" class="logo">
+                </a>
+            </div>
+            <a href="../html/basket.html" class="basketcontainer">
+                <img src="../logo/logo_cart.png" alt="Panier" class="basket">
+            </a>
+        </header>
+    
+        <div class="banner"></div>
+    
+        <section class="product-overview">
+            <img src="../images\Lampe_2.jpg" alt="Lamp" class="product-image">
+            <h1 class="product-title">Notre Lampe Lace</h1>
+            <p class="product-description">Cette élégante lampe de table allie design moderne et fonctionnalité. Parfaite pour créer une ambiance dans n'importe quelle pièce, elle est dotée d'une intensité lumineuse réglable et d'une finition épurée.</p>
+            <p class="product-price">59,99 €</p>
+            <a href="../html/basket.html" class="buy-button">Ajouter au Panier</a>
+        </section>
+    </body>
+    
+</html>
