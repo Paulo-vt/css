@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    color: white; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.nav_bar {
+    position: sticky;
+    top: 0;
+    padding: 29px 20px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: #080808;
+}
+
+.nav_bar a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #9D00FF;
+    font-size: 28px;
+    transition: color 0.3s ease;
+    font-family: Teko, sans-serif;
+}
+
+.nav_bar a:hover {
+    color: #ff13f0;
+}
+
+.header {
+    height: 100vh;
+    background-image: url('../images/background_header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.header-background {
+    background-color: #0a0a0a99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 25px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.header-content {
+    margin-top: 240px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    margin-top:200px;
+    padding: 20px;
+    font-family: Teko, sans-serif;
+}
+
+.presentation h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.presentation p {
+    font-size: 1.5em; 
+    max-width: 800px; 
+    line-height: 1.6; 
+    margin: 10px 0; 
+}
+
+.Compass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    font-family: Teko, sans-serif;
+}
+
+.display_compass {
+    width: 700px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin: 20px 0;
+}
+
+.display_compass:hover {
+    transform: scale(1.1);
+}
+
+.Compass h2 {
+    font-size: 2.6em; 
+    margin-bottom: 15px; 
+    color: #9D00FF;
+}
+
+.Compass p {
+    font-size: 1.4em; 
+    max-width: 700px; 
+    line-height: 1.5; 
+    margin-top: 10px; 
+}
+
+.event-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.event-grid h2 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    font-family: Teko, sans-serif;
+    color: #9D00FF; 
+}
+
+.grid-container {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    gap: 50px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+.display_events {
+    width: 150px; 
+    height: 150px; 
+    margin-top: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display_events:hover {
+    transform: scale(1.1);
+}
+
+.display-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.video-section {
+    text-align: center; /* Centre le contenu du bloc */
+    margin-top: 140px;   /* Un peu d'espace au-dessus de la vidéo */
+}
+
+.video-section p {
+    font-size: 1.6em;
+    color: white;
+    margin-bottom: 30px;
+    font-family: Teko, sans-serif;
+    text-align: center;   
+}
+
+.artists-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.artists-grid h2 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    font-family: Teko, sans-serif;
+    color: #9D00FF; 
+}
+
+.artists-container {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    gap: 50px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+.display_artists {
+    width: 150px; 
+    height: 150px; 
+    margin-top: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display_artists:hover {
+    transform: scale(1.1);
+}
+
+.AM-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.AM-grid h2 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    font-family: Teko, sans-serif;
+    color: #ff13f0; 
+}
+
+.AM-grid p {
+    font-size: 1.7em;
+    color: white;
+    font-family: Teko, sans-serif;  
+}
+
+.grid-container-M {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    gap: 50px; 
+    max-width: 100%; 
+    overflow-x: auto; 
+    padding: 10px;
+
+}
+
+.display_M-artists {
+    height: 400px;
+    max-height: 90%;
+    width: 400px;
+    max-width: 90%;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display_M-artists:hover {
+    transform: scale(1.1);
+}
+
+.about-us {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Teko, sans-serif;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.about-container h2 {
+    font-size: 2.8em;
+    color: #9D00FF;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #dcdcdc;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contacts .socials img {
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.contacts .socials img:hover {
+    transform: scale(1.2);
+}
+
+.form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #121212;
+    margin-top: 120px;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff13f0;
+    font-family: Teko, sans-serif;
+    margin-bottom: 20px;
+}
+
+.form p {
+    text-align: center;
+    font-size: 1.4em;
+    color: #9D00FF;
+    margin-bottom: 20px;
+    font-family: Teko, sans-serif;
+}
+
+.form label {
+    display: block;
+    font-size: 1.2em;
+    color: #9D00FF;
+    margin-bottom: 10px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1c1c1c;
+    outline: none;
+}
+
+.form input:focus, .form textarea:focus {
+    border: 2px solid #ff13f0;
+    background-color: #262626;
+}
+
+.form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.4em;
+    font-family: Teko, sans-serif;
+    color: #fff;
+    background-color: #9D00FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #ff13f0;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #121212;
+    color: #dcdcdc;
+    padding: 30px;
+    text-align: center;
+    font-family: Teko, sans-serif;
+}
+
+footer h3 {
+    font-size: 2em;
+    color: #ff13f0;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    color: #9D00FF;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #9D00FF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ff13f0;
+    transform: scale(1.1);
+}
